@@ -16,6 +16,13 @@ namespace TodoList
         public MainForm()
         {
             InitializeComponent();
+
         }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            listBox.Items.Add(new ListElement { ListText = "Some text", ListValue = "Some Value" });
+        }
+
     }
 }
